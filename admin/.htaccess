@@ -1,6 +1,0 @@
-<Files "generate.php">
-    AuthType Basic
-    AuthName "Restricted Area"
-    AuthUserFile /home/mateusz/public_html/5words.club/admin/.htpasswd
-    Require valid-user
-</Files>

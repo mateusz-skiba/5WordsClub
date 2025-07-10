@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon.webp" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9479QYTED"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-F9479QYTED');
+    </script>
+
+    <title>5WordsClub - Level up your English with 5 words daily</title>
+
+    <link rel="canonical" href="https://5words.club/" />
+
+    <meta name="description"
+        content="Join 5WordsClub. Receive a daily email with 5 new words tailored to your English level. A simple and effective method to quickly build the habit of improving your English every day.">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://5words.club">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="5WordsClub">
+    <meta property="og:description" content="Level up your English with 5 words daily">
+    <meta property="og:image" content="http://5words.club/assets/img/ogimage.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="5words.club">
+    <meta property="twitter:url" content="https://5words.club/">
+    <meta name="twitter:title" content="5WordsClub">
+    <meta name="twitter:description" content="Level up your English with 5 words daily">
+    <meta name="twitter:image" content="http://5words.club/assets/img/ogimage.png">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '29600949669549109');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=29600949669549109&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <script>
+        // check language
+        document.addEventListener("DOMContentLoaded", function () {
+            if (localStorage.getItem("language") !== "en") {
+                const userLang = navigator.language || navigator.userLanguage;
+                if (userLang.startsWith("pl")) {
+                    window.location.href = "/pl/";
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                <img loading="lazy" src="assets/img/logo.webp" alt="Logo 5 Words Club">
+            </a>
+            <nav>
+                <ul></ul>
+                <ul>
+                    <li>
+                        <a href="#how" class="link">How it works</a>
+                    </li>
+                    <li>
+                        <a href="#features" class="link">Features</a>
+                    </li>
+                    <li>
+                        <a href="#faq" class="link">FAQ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/dashboard" class="link">Log in</a>
+                    </li>
+                    <li>
+                        <a href="#join" class="cta join"><span>Join →</span></a>
+                    </li>
+                    <li id="lang">
+                        <a href="/pl/" class="link">PL</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="join">
+            <div class="container">
+                <div class="text">
+                    <h1><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap;">5 Words Club </span>Level up your English <br>with <span>5&nbsp;words daily</span></h1>
+                    <p>
+                        Receive a daily email with 5 new words tailored to your English <br>
+                        level. <span>A simple and effective method to quickly build the habit <br>
+                            of improving your English every day.</span>
+                    </p>
+                </div>
+                <form action="" id="toclub">
+                    <div class="emailBox">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" name="email" placeholder="Your email address" required>
+                    </div>
+                    <div class="levelBox">
+                        <label for="level" class="label">English level</label>
+                        <div class="level">
+                            <div class="pill" data-option="A"></div>
+                            <label class="option"><input type="radio" name="level" value="A"
+                                    checked><span>A1-2</span></label>
+                            <label class="option"><input type="radio" name="level" value="B"><span>B1-2</span></label>
+                            <label class="option"><input type="radio" name="level" value="C"><span>C1-2</span></label>
+                        </div>
+                    </div>
+                    <p class="hint">
+                        Start with a lower level. If the words are too easy for you, <br>
+                        you can change your level at any time.
+                    </p>
+                    <button type="submit" class="cta">
+                        <span>Join →</span>
+                    </button>
+                </form>
+            </div>
+            <img loading="lazy" src="assets/img/heroShadow.webp" alt="" class="heroShadow">
+        </section>
+        <section class="how" id="how">
+            <div class="container">
+                <div class="headline">
+                    <h2>
+                        Easy way to <br>
+                        improve your English
+                    </h2>
+                    <p>
+                        Each email is an easy way to enrich your vocabulary, <br>
+                        helping your English improve every day, straight to your inbox
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="mail openPreview">
+                        <div class="mailOverlay">
+                            <p>View full preview</p>
+                        </div>
+                        <table width="100%" cellspacing="0" cellpadding="0" style="max-width: 700px; margin: 0 auto;"
+                            id="mainMail">
+                            <tbody>
+                                <tr style="padding: 0; margin: 0; height: 38px;">
+                                    <td style="padding: 0; margin: 0; height: 38px;">
+                                        <p
+                                            style="display: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                            5 Words Club</p>
+                                    </td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0; width: 100%; height: 35px;">
+                                    <td align="center" style="margin: 0 auto; padding: 0;">
+                                        <a href="https://5words.club/" target="_blank"
+                                            style="padding: 0; margin: 0; display: block; width: 135px; text-align: center; text-decoration: none;">
+                                            <picture>
+                                                <source srcset="https://5words.club/assets/img/logo.webp"
+                                                    type="image/svg+xml">
+                                                <img loading="lazy" src="https://5words.club/assets/img/logo.webp"
+                                                    alt="5 Words Club Logo"
+                                                    style="display: block; height: 33px; width: 135px;" height="33"
+                                                    width="135">
+                                            </picture>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0; height: 38px;">
+                                    <td style="padding: 0; margin: 0;"></td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0;">
+                                    <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                            atmosphere </p>
+                                                    </td>
+                                                    <td class="soundBox"
+                                                        style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                        <a href="https://www.onelook.com/pronounce/macmillan/US/atmosphere-American-English-pronunciation.mp3"
+                                                            target="_blank"
+                                                            style="display: block; width: 34px; height: 34px; text-decoration: none;">
+                                                            <picture>
+                                                                <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                                    type="image/svg+xml">
+                                                                <img loading="lazy"
+                                                                    src="https://5words.club/assets/img/mail/sound.webp"
+                                                                    alt="Listen to the word"
+                                                                    style="display: block; height: 34px; width: 34px;"
+                                                                    height="34" width="34">
+                                                            </picture>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="definitionBox"
+                                                        style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                            The feeling or mood in a place, especially as you experience
+                                                            it. </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="imgBox"
+                                                        style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/atmosphere.webp"
+                                                            alt="atmosphere"
+                                                            style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                            height="150" width="150">
+                                                    </td>
+                                                    <td class="textBox"
+                                                        style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                            The atmosphere at the concert was amazing.<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                            atmospheres<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                                uses</strong>
+                                                            create an atmosphere, atmosphere of excitement
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0;">
+                                    <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                            concentrate </p>
+                                                    </td>
+                                                    <td class="soundBox"
+                                                        style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                        <a href="https://www.onelook.com/pronounce/macmillan/US/concentrate-American-English-pronunciation.mp3"
+                                                            target="_blank"
+                                                            style="display: block; width: 34px; height: 34px; text-decoration: none;">
+                                                            <picture>
+                                                                <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                                    type="image/svg+xml">
+                                                                <img loading="lazy"
+                                                                    src="https://5words.club/assets/img/mail/sound.webp"
+                                                                    alt="Listen to the word"
+                                                                    style="display: block; height: 34px; width: 34px;"
+                                                                    height="34" width="34">
+                                                            </picture>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="definitionBox"
+                                                        style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                            To focus your mind or attention on something. </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="imgBox"
+                                                        style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/concentrate.webp"
+                                                            alt="concentrate"
+                                                            style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                            height="150" width="150">
+                                                    </td>
+                                                    <td class="textBox"
+                                                        style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                            She needs to concentrate on her homework.<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                            concentrates, concentrated, concentrating<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                                uses</strong>
+                                                            concentrate on, concentrate hard
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0;">
+                                    <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                            particular </p>
+                                                    </td>
+                                                    <td class="soundBox"
+                                                        style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                        <a href="https://www.onelook.com/pronounce/macmillan/US/particular-American-English-pronunciation.mp3"
+                                                            target="_blank"
+                                                            style="display: block; width: 34px; height: 34px; text-decoration: none;">
+                                                            <picture>
+                                                                <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                                    type="image/svg+xml">
+                                                                <img loading="lazy"
+                                                                    src="https://5words.club/assets/img/mail/sound.webp"
+                                                                    alt="Listen to the word"
+                                                                    style="display: block; height: 34px; width: 34px;"
+                                                                    height="34" width="34">
+                                                            </picture>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="definitionBox"
+                                                        style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                            Used to talk about one specific thing or person, not
+                                                            general. </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="imgBox"
+                                                        style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/particular.webp"
+                                                            alt="particular"
+                                                            style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                            height="150" width="150">
+                                                    </td>
+                                                    <td class="textBox"
+                                                        style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                            I don’t have a particular plan for the weekend.<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                            particularly<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                                uses</strong>
+                                                            in particular, particular attention
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0;">
+                                    <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                            luxury </p>
+                                                    </td>
+                                                    <td class="soundBox"
+                                                        style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                        <a href="https://www.onelook.com/pronounce/macmillan/US/luxuries-American-English-pronunciation.mp3"
+                                                            target="_blank"
+                                                            style="display: block; width: 34px; height: 34px; text-decoration: none;">
+                                                            <picture>
+                                                                <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                                    type="image/svg+xml">
+                                                                <img loading="lazy"
+                                                                    src="https://5words.club/assets/img/mail/sound.webp"
+                                                                    alt="Listen to the word"
+                                                                    style="display: block; height: 34px; width: 34px;"
+                                                                    height="34" width="34">
+                                                            </picture>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="definitionBox"
+                                                        style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                            Something expensive or special that is not necessary but
+                                                            makes life more enjoyable. </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="imgBox"
+                                                        style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/luxury.webp" alt="luxury"
+                                                            style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                            height="150" width="150">
+                                                    </td>
+                                                    <td class="textBox"
+                                                        style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                            They live in a house with many luxuries.<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                            luxuries<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                                uses</strong>
+                                                            luxury goods, live in luxury
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0;">
+                                    <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                            interview </p>
+                                                    </td>
+                                                    <td class="soundBox"
+                                                        style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                        <a href="https://www.onelook.com/pronounce/macmillan/US/interview-American-English-pronunciation.mp3"
+                                                            target="_blank"
+                                                            style="display: block; width: 34px; height: 34px; text-decoration: none;">
+                                                            <picture>
+                                                                <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                                    type="image/svg+xml">
+                                                                <img loading="lazy"
+                                                                    src="https://5words.club/assets/img/mail/sound.webp"
+                                                                    alt="Listen to the word"
+                                                                    style="display: block; height: 34px; width: 34px;"
+                                                                    height="34" width="34">
+                                                            </picture>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="definitionBox"
+                                                        style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                            A meeting where someone asks questions to find out
+                                                            information, or to get a job. </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                            <tbody>
+                                                <tr style="padding: 0; margin: 0;">
+                                                    <td class="imgBox"
+                                                        style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/interview.webp"
+                                                            alt="interview"
+                                                            style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                            height="150" width="150">
+                                                    </td>
+                                                    <td class="textBox"
+                                                        style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                        <p
+                                                            style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                            She has an interview for a new job tomorrow.<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                            interviews, interviewed, interviewing<br><br>
+                                                            <strong
+                                                                style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                                uses</strong>
+                                                            job interview, interview for a position
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr class="wordFooter" style="padding: 0; margin: 0; height: 36px;">
+                                    <td
+                                        style="padding: 0; margin: 0; background-color: #FFF; border-radius: 0px 0px 18px 18px; height: 36px;">
+                                    </td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0; height: 28px;">
+                                    <td style="padding: 0; margin: 0; height: 28px;"></td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0;">
+                                    <td style="padding: 0; margin: 0;">
+                                        <p class="footerInfo"
+                                            style="padding: 0; margin: 0 auto; text-align: center; font-size: 12px; line-height: 1.5; font-weight: 400; color: #888888; font-family: Helvetica, Arial, sans-serif; width: 94%; max-width: 365px;">
+                                            You’re receiving this email because you subscribed to 5WordsClub to improve
+                                            your English skills<span class="dot" style="display: none;">.</span><br
+                                                class="br" style="display: none;"><span class="separator"> |</span>
+                                            <a href="https://5words.club/dashboard"
+                                                style="color: #888888;">Unsubscribe</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0; height: 20px;">
+                                    <td style="padding: 0; margin: 0; height: 20px;"></td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0;">
+                                    <td style="padding: 0; margin: 0;">
+                                        <p
+                                            style="padding: 0; margin: 0 auto; text-align: center; font-size: 12px; line-height: 1.5; font-weight: 400; color: #888888; font-family: Helvetica, Arial, sans-serif; max-width: 365px;">
+                                            © 2025 5WordsClub
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr style="padding: 0; margin: 0; height: 20px;">
+                                    <td style="padding: 0; margin: 0; height: 20px;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Every email brings you 5 carefully selected words with <br>
+                            a simple definition, an image, example, forms and common <br>
+                            uses to make learning effortless. You will also get <br>
+                            a short story that uses all 5 words, so you can <br>
+                            see them in action and remember them better.
+                        </p>
+                        <ul>
+                            <li>
+                                <img loading="lazy" src="assets/img/checkIcon.webp" alt="">
+                                <span>Join now</span>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="assets/img/checkIcon.webp" alt="">
+                                <span>Receive a daily email</span>
+                            </li>
+                            <li>
+                                <img loading="lazy" src="assets/img/checkIcon.webp" alt="">
+                                <span>Improve your English</span>
+                            </li>
+                        </ul>
+                        <button class="cta light openPreview"><span>Preview Email</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <div class="container">
+                <div class="box">
+                    <div class="imgBox">
+                        <img loading="lazy" src="assets/img/iconFeature1.webp" alt="">
+                    </div>
+                    <h3>A daily dose of new words</h3>
+                    <p>
+                        Every day, you’ll receive an email with 5 new words, carefully designed to help you easily and
+                        effectively remember them.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="imgBox">
+                        <img loading="lazy" src="assets/img/iconFeature2.webp" alt="">
+                    </div>
+                    <h3>Tailored to your level</h3>
+                    <p>
+                        The words are suited to your English level. If they’re too easy or too difficult, you can easily
+                        adjust your level.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="imgBox">
+                        <img loading="lazy" src="assets/img/iconFeature3.webp" alt="">
+                    </div>
+                    <h3>Quick and convenient learning</h3>
+                    <p>
+                        Everything you need is in the daily email, which you can open anytime, anywhere.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="imgBox">
+                        <img loading="lazy" src="assets/img/iconFeature4.webp" alt="">
+                    </div>
+                    <h3>Simplicity and effectiveness</h3>
+                    <p>
+                        With a simple and proven way, you naturally improve your English every day.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2>FAQ</h2>
+                <div class="content">
+                    <div class="panel">
+                        <div class="question">
+                            <h3>Pricing</h3>
+                            <div class="expand">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                The subscription costs €3 per month.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="question">
+                            <h3>How can I cancel my subscription?</h3>
+                            <div class="expand">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                You can cancel your subscription anytime in your <a
+                                    href="https://5words.club/dashboard/">dashboard</a> or by clicking the
+                                cancellation link included in every email with your daily words.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="question">
+                            <h3>How can I change my difficulty English level?</h3>
+                            <div class="expand">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                You can change your level anytime in your <a
+                                    href="https://5words.club/dashboard/">dashboard</a>. <br>
+                                After changing it, you will start receiving words at the new level from the next email.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call">
+            <div class="container">
+                <h2>
+                    Join now to start <br>
+                    improving <span>your English</span>
+                </h2>
+                <p>
+                    Get daily emails with new words, just a few minutes a day, and you’ll see <br>
+                    quick progress in your English
+                </p>
+                <a href="#join" class="cta big join"><span>Join →</span></a>
+            </div>
+            <div class="bottomShadow"></div>
+        </section>
+        <div class="popup" id="popupWaitlist">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="popupClose">
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="title">
+                    Waitlist
+                </p>
+                <p class="text">
+                    Hey! 5WordsClub is not ready yet, we are still working on it. <br>
+                    Join the waitlist and we will tell you when we start. <br>
+                    Thanks for your interest! 🚀
+                </p>
+                <form action="" id="formWaitlist">
+                    <div class="emailBox">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" name="email" placeholder="Your email address" required>
+                    </div>
+                    <div class="levelBox">
+                        <label for="level" class="label">English level</label>
+                        <select name="level" class="level">
+                            <option value="A" selected>A1-2</option>
+                            <option value="B">B1-2</option>
+                            <option value="C">C1-2</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="cta">
+                        <span class="mobile">Join </span><span>→</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="popup" id="popupPreview">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="popupClose">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="level mailLevel">
+                    <div class="pill" data-option="A"></div>
+                    <label class="option"><input type="radio" name="level" value="A" checked><span>A1-2</span></label>
+                    <label class="option"><input type="radio" name="level" value="B"><span>B1-2</span></label>
+                    <label class="option"><input type="radio" name="level" value="C"><span>C1-2</span></label>
+                </div>
+                <div class="previewMail" data-level="A">
+                    <table width="100%" cellspacing="0" cellpadding="0" style="max-width: 700px; margin: 0 auto;">
+                        <tbody>
+                            <tr style="padding: 0; margin: 0; height: 38px;">
+                                <td style="padding: 0; margin: 0; height: 38px;">
+                                    <p
+                                        style="display: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                        5 Words Club</p>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; width: 100%; height: 35px;">
+                                <td align="center" style="margin: 0 auto; padding: 0;">
+                                    <a href="https://5words.club/" target="_blank"
+                                        style="padding: 0; margin: 0; display: block; width: 135px; text-align: center; text-decoration: none;">
+                                        <picture>
+                                            <source srcset="https://5words.club/assets/img/logo.webp"
+                                                type="image/svg+xml">
+                                            <img loading="lazy" src="https://5words.club/assets/img/logo.webp"
+                                                alt="5 Words Club Logo"
+                                                style="display: block; height: 33px; width: 135px;" height="33"
+                                                width="135">
+                                        </picture>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; height: 38px;">
+                                <td style="padding: 0; margin: 0;"></td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; height: 18px;">
+                                <td
+                                    style="padding: 0; margin: 0; background-color: #FFF; border-radius: 18px 18px 0px 0px; height: 18px;">
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        mountain </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/mountain-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        A very big hill, much taller than a regular hill. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy" src="https://5words.club/assets/img/mountain.webp"
+                                                        alt="mountain"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        We climbed a tall mountain last summer.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        climb a mountain, big mountain
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        listen </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/listen-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        To hear something and pay attention to it. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy" src="https://5words.club/assets/img/listen.webp"
+                                                        alt="listen"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        I like to listen to music.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        listen to music, listen carefully
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        book </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/book-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        A set of pages with stories, facts, or pictures. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy" src="https://5words.club/assets/img/book.webp"
+                                                        alt="book"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        She is reading a book about animals.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        read a book, buy a book
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        travel </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/UK/travel-British-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        To go from one place to another. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy" src="https://5words.club/assets/img/travel.webp"
+                                                        alt="travel"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        I want to travel to Paris next year.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        luxuries<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        travel by plane, travel abroad
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        friend </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/friend-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        A person you like and spend time with. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy" src="https://5words.club/assets/img/friend.webp"
+                                                        alt="friend"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        My best friend is very kind.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        interviews, interviewed, interviewing<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        best friend, close friend
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 38px 40px 28px; margin: 0; background-color: #FFF;"
+                                    class="word story">
+                                    <p
+                                        style="padding: 0; margin: 0; text-align: left; font-size: 30px; line-height: 1; font-weight: 700; color: #333; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                        Story
+                                    </p>
+                                    <p
+                                        style="padding: 0; margin: 0; text-align: left; font-size: 17px; line-height: 1.45; font-weight: 400; color: #555; font-family: Helvetica, Arial, sans-serif; width: 98%; padding-top: 10px;">
+                                        My friend and I are planning a travel adventure to a mountain region, and I'm
+                                        reading a book about it to prepare. We'll listen to local guides and learn as
+                                        much&nbsp;as we can.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="wordFooter" style="padding: 0; margin: 0; height: 36px;">
+                                <td
+                                    style="padding: 0; margin: 0; background-color: #FFF; border-radius: 0px 0px 18px 18px; height: 36px;">
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; height: 16px;">
+                                <td style="padding: 0; margin: 0; height: 16px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="previewMail" data-level="B">
+                    <table width="100%" cellspacing="0" cellpadding="0" style="max-width: 700px; margin: 0 auto;">
+                        <tbody>
+                            <tr style="padding: 0; margin: 0; height: 38px;">
+                                <td style="padding: 0; margin: 0; height: 38px;">
+                                    <p
+                                        style="display: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                        5 Words Club</p>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; width: 100%; height: 35px;">
+                                <td align="center" style="margin: 0 auto; padding: 0;">
+                                    <a href="https://5words.club/" target="_blank"
+                                        style="padding: 0; margin: 0; display: block; width: 135px; text-align: center; text-decoration: none;">
+                                        <picture>
+                                            <source srcset="https://5words.club/assets/img/logo.webp"
+                                                type="image/svg+xml">
+                                            <img loading="lazy" src="https://5words.club/assets/img/logo.webp"
+                                                alt="5 Words Club Logo"
+                                                style="display: block; height: 33px; width: 135px;" height="33"
+                                                width="135">
+                                        </picture>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; height: 38px;">
+                                <td style="padding: 0; margin: 0;"></td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; height: 18px;">
+                                <td
+                                    style="padding: 0; margin: 0; background-color: #FFF; border-radius: 18px 18px 0px 0px; height: 18px;">
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        atmosphere </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/atmosphere-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        The feeling or mood in a place, especially as you experience it.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy"
+                                                        src="https://5words.club/assets/img/atmosphere.webp"
+                                                        alt="atmosphere"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        The atmosphere at the concert was amazing.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        atmospheres<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        create an atmosphere, atmosphere of excitement
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        concentrate </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/concentrate-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        To focus your mind or attention on something. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy"
+                                                        src="https://5words.club/assets/img/concentrate.webp"
+                                                        alt="concentrate"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        She needs to concentrate on her homework.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        concentrates, concentrated, concentrating<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        concentrate on, concentrate hard
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        particular </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/particular-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        Used to talk about one specific thing or person, not general.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy"
+                                                        src="https://5words.club/assets/img/particular.webp"
+                                                        alt="particular"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        I don’t have a particular plan for the weekend.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        particularly<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        in particular, particular attention
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        luxury </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/UK/luxury-British-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        Something expensive or special that is not necessary but makes
+                                                        life more enjoyable. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy" src="https://5words.club/assets/img/luxury.webp"
+                                                        alt="luxury"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        They live in a house with many luxuries.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        luxuries<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        luxury goods, live in luxury
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        interview </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/interview-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        A meeting where someone asks questions to find out information,
+                                                        or to get a job. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy"
+                                                        src="https://5words.club/assets/img/interview.webp"
+                                                        alt="interview"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        She has an interview for a new job tomorrow.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        interviews, interviewed, interviewing<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        job interview, interview for a position
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 38px 40px 28px; margin: 0; background-color: #FFF;"
+                                    class="word story">
+                                    <p
+                                        style="padding: 0; margin: 0; text-align: left; font-size: 30px; line-height: 1; font-weight: 700; color: #333; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                        Story
+                                    </p>
+                                    <p
+                                        style="padding: 0; margin: 0; text-align: left; font-size: 17px; line-height: 1.45; font-weight: 400; color: #555; font-family: Helvetica, Arial, sans-serif; width: 98%; padding-top: 10px;">
+                                        The restaurant had a wonderful atmosphere, but it was hard to concentrate on the
+                                        interview. I was trying to focus on a particular question, but the luxury of the
+                                        place was a bit distracting.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="wordFooter" style="padding: 0; margin: 0; height: 36px;">
+                                <td
+                                    style="padding: 0; margin: 0; background-color: #FFF; border-radius: 0px 0px 18px 18px; height: 36px;">
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; height: 16px;">
+                                <td style="padding: 0; margin: 0; height: 16px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="previewMail" data-level="C">
+                    <table width="100%" cellspacing="0" cellpadding="0" style="max-width: 700px; margin: 0 auto;">
+                        <tbody>
+                            <tr style="padding: 0; margin: 0; height: 38px;">
+                                <td style="padding: 0; margin: 0; height: 38px;">
+                                    <p
+                                        style="display: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                        5 Words Club</p>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; width: 100%; height: 35px;">
+                                <td align="center" style="margin: 0 auto; padding: 0;">
+                                    <a href="https://5words.club/" target="_blank"
+                                        style="padding: 0; margin: 0; display: block; width: 135px; text-align: center; text-decoration: none;">
+                                        <picture>
+                                            <source srcset="https://5words.club/assets/img/logo.webp"
+                                                type="image/svg+xml">
+                                            <img loading="lazy" src="https://5words.club/assets/img/logo.webp"
+                                                alt="5 Words Club Logo"
+                                                style="display: block; height: 33px; width: 135px;" height="33"
+                                                width="135">
+                                        </picture>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; height: 38px;">
+                                <td style="padding: 0; margin: 0;"></td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; height: 18px;">
+                                <td
+                                    style="padding: 0; margin: 0; background-color: #FFF; border-radius: 18px 18px 0px 0px; height: 18px;">
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        detrimental </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/detrimental-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        Something that causes harm or damage. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy"
+                                                        src="https://5words.club/assets/img/detrimental.webp"
+                                                        alt="detrimental"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        Something that causes harm or damage.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        detriment<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        detrimental effect, detrimental impact
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        profound </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/profound-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        Having deep meaning or great significance; often used to
+                                                        describe deep thoughts or feelings. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy" src="https://5words.club/assets/img/profound.webp"
+                                                        alt="profound"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        The speech had a profound impact on the audience.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        profundity<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        profound impact, profound thought
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        redundant </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/redundant-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        Not necessary because something similar already exists or has
+                                                        been done. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy"
+                                                        src="https://5words.club/assets/img/redundant.webp"
+                                                        alt="redundant"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        The extra details were redundant and didn't add value.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        redundancy<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        redundant information, redundant task
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        articulate </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/UK/articulate-British-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        Able to express thoughts clearly and effectively in speech or
+                                                        writing. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy"
+                                                        src="https://5words.club/assets/img/articulate.webp" alt="luxury"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        Able to express thoughts clearly and effectively in speech or
+                                                        writing.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        articulation, articulately<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        articulate speaker, articulate argument
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 28px 40px; margin: 0; background-color: #FFF;" class="word">
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="nameBox" style="padding: 0; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 36px; line-height: 1; font-weight: 700; color: #1B211E; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                                        vehemence </p>
+                                                </td>
+                                                <td class="soundBox"
+                                                    data-sound="https://www.onelook.com/pronounce/macmillan/US/vehement-American-English-pronunciation.mp3"
+                                                    style="padding: 0; margin: 0; width: 34px; text-align: right;">
+                                                    <picture>
+                                                        <source srcset="https://5words.club/assets/img/mail/sound.svg"
+                                                            type="image/svg+xml">
+                                                        <img loading="lazy"
+                                                            src="https://5words.club/assets/img/mail/sound.webp"
+                                                            alt="Listen to the word"
+                                                            style="display: block; height: 34px; width: 34px;"
+                                                            height="34" width="34">
+                                                    </picture>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="definitionBox"
+                                                    style="padding: 6px 0px 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 18px; line-height: 1.3; font-weight: 400; color: #1B211E; font-family: Helvetica, Arial, sans-serif; width: 90%;">
+                                                        The strong feeling or force behind something, especially in a
+                                                        way that shows anger or passion. </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="padding: 0; margin: 0; width: 100%; text-align: left;">
+                                        <tbody>
+                                            <tr style="padding: 0; margin: 0;">
+                                                <td class="imgBox"
+                                                    style="padding: 0; padding-left: 16px; margin: 0; width: 166px; height: 150px; text-align: right;">
+                                                    <img loading="lazy"
+                                                        src="https://5words.club/assets/img/vehemence.webp"
+                                                        alt="interview"
+                                                        style="display: block; height: 150px; width: 150px; border-radius: 16px;"
+                                                        height="150" width="150">
+                                                </td>
+                                                <td class="textBox"
+                                                    style="padding: 0; padding-left: 24px; margin: 0; width: 100%;">
+                                                    <p
+                                                        style="padding: 0; margin: 0; text-align: left; font-size: 16px; line-height: 1.2; font-weight: 400; color: #2E3331; font-family: Helvetica, Arial, sans-serif;">
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Example</strong>
+                                                        Her vehemence in defending her point of view was clear to
+                                                        everyone in the room.<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Forms</strong>
+                                                        vehement<br><br>
+                                                        <strong
+                                                            style="padding: 0; padding-bottom: 4px; margin: 0; display: block; text-align: left; font-size: 14px; line-height: 1; font-weight: 700; color: #797676; opacity: 0.6; font-family: Helvetica, Arial, sans-serif;">Common
+                                                            uses</strong>
+                                                        vehemence of opinion, vehemence of protest
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0;">
+                                <td style="padding: 38px 40px 28px; margin: 0; background-color: #FFF;"
+                                    class="word story">
+                                    <p
+                                        style="padding: 0; margin: 0; text-align: left; font-size: 30px; line-height: 1; font-weight: 700; color: #333; font-family: Helvetica, Arial, sans-serif; text-transform: capitalize;">
+                                        Story
+                                    </p>
+                                    <p
+                                        style="padding: 0; margin: 0; text-align: left; font-size: 17px; line-height: 1.45; font-weight: 400; color: #555; font-family: Helvetica, Arial, sans-serif; width: 98%; padding-top: 10px;">
+                                        Speaking with such vehemence about the issue felt detrimental to the discussion,
+                                        making some points seem redundant. While his points were articulate, the
+                                        emotional charge obscured the profound message he was trying to convey.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="wordFooter" style="padding: 0; margin: 0; height: 36px;">
+                                <td
+                                    style="padding: 0; margin: 0; background-color: #FFF; border-radius: 0px 0px 18px 18px; height: 36px;">
+                                </td>
+                            </tr>
+                            <tr style="padding: 0; margin: 0; height: 16px;">
+                                <td style="padding: 0; margin: 0; height: 16px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="rights">Copyright © 2025. All rights reserved.</p>
+            <a href="mailto:contact@5words.club" class="mail">
+                <span>contact@5words.club</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

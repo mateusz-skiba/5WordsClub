@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /dashboard/
+Disallow: /thankyou.html
+Disallow: /thankyou-pl.html
+
+Sitemap: https://5words.club/sitemap.xml

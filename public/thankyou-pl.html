@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon.webp" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9479QYTED"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-F9479QYTED');
+    </script>
+
+    <title>Witaj w 5WordsClub!</title>
+    <meta name="description"
+        content="Dołącz do 5WordsClub. Otrzymuj codziennie e-mail z 5 nowymi słówkami dopasowanymi do Twojego poziomu angielskiego. Prosty i skuteczny sposób na szybkie wyrobienie nawyku codziennej nauki.">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <link rel="canonical" href="https://5words.club/pl/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://5words.club">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="5WordsClub">
+    <meta property="og:description" content="Level up your English with 5 words daily">
+    <meta property="og:image" content="http://5words.club/assets/img/ogimage.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="5words.club">
+    <meta property="twitter:url" content="https://5words.club/">
+    <meta name="twitter:title" content="5WordsClub">
+    <meta name="twitter:description" content="Level up your English with 5 words daily">
+    <meta name="twitter:image" content="http://5words.club/assets/img/ogimage.png">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '29600949669549109');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=29600949669549109&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/pl/" class="logo">
+                <img loading="lazy" src="assets/img/logo.webp" alt="Logo 5 Words Club">
+            </a>
+            <nav>
+                <ul></ul>
+                <ul>
+                    <li>
+                        <a href="#how" class="link">Jak to działa</a>
+                    </li>
+                    <li>
+                        <a href="#features" class="link">Nauka</a>
+                    </li>
+                    <li>
+                        <a href="#faq" class="link">FAQ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/dashboard" class="link">Logowanie</a>
+                    </li>
+                    <li>
+                        <a href="#join" class="cta join"><span>Dołącz →</span></a>
+                    </li>
+                    <li>
+                        <a href="https://5words.club/" class="link"
+                            onclick="localStorage.setItem('language', 'en')">EN</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="thankyou" id="thankyou">
+            <div class="container">
+                <h1>Witaj w <span>5WordsClub!</span></h1>
+                <p>
+                    <strong>Dziękujemy, że dołączyłeś!</strong><br>
+                    Już jutro otrzymasz pierwszy e-mail z 5 opracowanymi słówkami po angielsku na adres
+                    <strong id="fieldEmail">[email]</strong>. <br>
+                    Twój poziom słówek to <strong id="fieldLevel">[level]</strong>, możesz go w każdej chwili zmienić w
+                    panelu. <br><br>
+
+                    W ciągu kilku minut otrzymasz e-mail powitalny z unikalnym linkiem do panelu. <br>
+                    <span class="additional">Jeśli nie widzisz wiadomości, sprawdź folder Spam.</span>
+                </p>
+                <a href="/pl/" class="cta big"><span>Strona Główna</span></a>
+            </div>
+
+            <img loading="lazy" src="assets/img/heroShadow.webp" alt="" class="heroShadow">
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="rights">Copyright © 2025. All rights reserved.</p>
+            <a href="mailto:contact@5words.club" class="mail">
+                <span>contact@5words.club</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        fbq('track', 'Purchase', { value: 10.00, currency: 'PLN' });
+    </script>
+</body>
+
+</html>

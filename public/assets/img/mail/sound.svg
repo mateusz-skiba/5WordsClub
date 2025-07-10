@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="sound" transform="translate(-603 -509)">
+    <rect id="Rectangle_57" data-name="Rectangle 57" width="34" height="34" rx="17" transform="translate(603 509)" fill="#f3f5ff"/>
+    <path id="volume-low-solid" d="M6.049,32.075a.644.644,0,0,1,.38.587v7.714a.643.643,0,0,1-1.071.48l-2.71-2.409H1.286A1.287,1.287,0,0,1,0,37.162V35.876A1.287,1.287,0,0,1,1.286,34.59H2.648l2.71-2.409A.645.645,0,0,1,6.049,32.075Zm2.24,2.947a1.93,1.93,0,0,1,0,2.993.483.483,0,0,1-.609-.749.965.965,0,0,0,0-1.5.483.483,0,1,1,.609-.749Z" transform="translate(615.5 489.481)" fill="#5a7ffa"/>
+  </g>
+</svg>

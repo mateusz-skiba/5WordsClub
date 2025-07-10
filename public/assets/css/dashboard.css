@@ -1,0 +1,601 @@
+/* general */
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #F9F9FA;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(210, 210, 212);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(200, 200, 202);
+}
+
+/* components */
+.container {
+  width: 1280px;
+  width: 1220px;
+  max-width: 90%;
+  margin: auto;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 96px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+}
+header .container a.logo {
+  text-align: none;
+  cursor: pointer;
+}
+header .container a.logo img {
+  width: auto;
+  height: 32px;
+}
+header .container .support {
+  position: relative;
+}
+header .container .support a {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  transition: 0.1s ease;
+}
+header .container .support a img {
+  width: 14px;
+}
+header .container .support a:hover {
+  background-color: rgb(241, 241, 241);
+}
+header .container .support a:hover + .tooltip {
+  visibility: visible;
+  opacity: 1;
+  top: calc(100% + 10px);
+}
+header .container .support .tooltip {
+  visibility: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #1B211E;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 4px 7px;
+  opacity: 0;
+  transition: 0.18s ease;
+}
+header .container .support .tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -4px;
+  border-width: 4px;
+  border-style: solid;
+  transform: rotate(180deg);
+  border-color: #1B211E transparent transparent transparent;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #2E3331;
+  opacity: 0.4;
+}
+
+.btn-primary {
+  display: block;
+  height: 46px;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-primary span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+}
+.btn-primary span img {
+  fill: #fff;
+  filter: invert(1);
+  width: 12px;
+  display: inline-block;
+  margin-left: 2px;
+  margin-bottom: -1px;
+}
+.btn-primary span img.skew {
+  transform: rotate(-45deg);
+}
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background: rgb(107, 140, 250);
+  background: linear-gradient(90deg, rgb(107, 140, 250) 0%, rgb(57, 101, 249) 50%, rgb(57, 101, 249) 100%);
+  top: 0px;
+  left: 0%;
+  transition: 0.32s ease;
+}
+.btn-primary:hover::before, .btn-primary:focus::before, .btn-primary:active::before {
+  left: -100%;
+}
+
+.btn-secondary {
+  display: block;
+  height: 46px;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3965F9;
+  transition: 0.18s ease;
+}
+.btn-secondary span {
+  transition: 0.18s ease;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3965F9;
+  position: relative;
+}
+.btn-secondary:hover {
+  background-color: #3965F9;
+}
+.btn-secondary:hover span {
+  color: #fff;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons .btn-primary,
+.buttons .btn-secondary {
+  width: calc(50% - 6px);
+}
+
+/* signin */
+main.signin {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  padding: 120px 0px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.signin {
+  width: 430px;
+  max-width: 90%;
+  border-radius: 18px;
+  background-color: #FFFFFF;
+  padding: 42px 36px 42px;
+}
+section.signin h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1B211E;
+  text-align: center;
+  width: 100%;
+  opacity: 0.9;
+}
+section.signin p.desc {
+  font-size: 14px;
+  font-weight: 300;
+  color: #1B211E;
+  text-align: center;
+  width: 100%;
+  opacity: 0.9;
+  margin-top: 14px;
+  padding: 0px 10px;
+}
+section.signin p.desc strong {
+  font-weight: 600;
+}
+section.signin .form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+section.signin .form input {
+  height: 46px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid rgba(27, 33, 30, 0.3);
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1B211E;
+  outline: none;
+  transition: 0.12s ease;
+  margin-bottom: 12px;
+  margin-top: 2px;
+}
+section.signin .form input::-moz-placeholder {
+  color: rgba(27, 33, 30, 0.3);
+}
+section.signin .form input::placeholder {
+  color: rgba(27, 33, 30, 0.3);
+}
+section.signin .form input:active, section.signin .form input:focus {
+  border: 1px solid rgba(46, 51, 49, 0.7);
+}
+
+/* dashboard */
+main.dashboard {
+  padding: 120px 0px 70px;
+  width: 100%;
+  min-height: calc(100vh - 50px);
+}
+main.dashboard .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main.dashboard .container nav {
+  width: 280px;
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  padding: 16px;
+}
+main.dashboard .container nav ul {
+  width: 100%;
+}
+main.dashboard .container nav ul li {
+  list-style-type: none;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 8px;
+}
+main.dashboard .container nav ul li:last-of-type {
+  margin-bottom: 0px;
+}
+main.dashboard .container nav ul li a {
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 0px 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+}
+main.dashboard .container nav ul li a.active {
+  background-color: rgb(231, 231, 231);
+}
+main.dashboard .container nav ul li a.active span {
+  font-weight: 500;
+}
+main.dashboard .container nav ul li a.active:hover {
+  background-color: rgb(231, 231, 231);
+}
+main.dashboard .container nav ul li a:hover {
+  background-color: rgb(250, 250, 250);
+}
+main.dashboard .container nav ul li a .avatarBox {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4A4D4B;
+  font-weight: bold;
+  font-size: 14px;
+  color: #5A7FFA;
+  text-transform: uppercase;
+}
+main.dashboard .container nav ul li a .imgBox {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.dashboard .container nav ul li a .imgBox img.white {
+  display: none;
+}
+main.dashboard .container nav ul li a span {
+  display: block;
+  margin-left: 16px;
+  color: rgba(27, 33, 3, 0.9);
+  font-weight: 400;
+}
+main.dashboard .container section.account {
+  width: calc(100% - 280px - 32px);
+  border-radius: 18px;
+}
+main.dashboard .container section.account article {
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 36px 42px;
+}
+main.dashboard .container section.account article:last-of-type {
+  margin-bottom: 0px;
+}
+main.dashboard .container section.account article h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1B211E;
+  margin-bottom: 14px;
+}
+main.dashboard .container section.account article p.desc {
+  font-size: 14px;
+  font-weight: 300;
+  color: #1B211E;
+  text-align: left;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+main.dashboard .container section.account article .accountInfo {
+  margin-bottom: 60px;
+}
+main.dashboard .container section.account article .accountInfo .name {
+  font-size: 20px;
+  color: #1B211E;
+  display: inline-block;
+  text-decoration: none !important;
+  word-break: break-all;
+}
+main.dashboard .container section.account article .accountInfo .status {
+  background-color: #00D97B;
+  margin-left: 20px;
+  height: 34px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 34px;
+  padding: 0px 17px;
+  display: inline-block;
+}
+main.dashboard .container section.account article .languagePill {
+  background: #6B8CFA;
+  width: 102px;
+  height: 42px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+main.dashboard .container section.account article form .levelBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid #E9E9E9;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 11px;
+  margin-top: 32px;
+}
+main.dashboard .container section.account article form .levelBox .pill {
+  width: 102px;
+  height: 42px;
+  border-radius: 8px;
+  transition: 0.1s ease;
+  cursor: pointer;
+  position: relative;
+  margin-right: 3px;
+}
+main.dashboard .container section.account article form .levelBox .pill:last-of-type {
+  margin-right: 0px;
+}
+main.dashboard .container section.account article form .levelBox .pill:hover {
+  background-color: rgb(241, 241, 241);
+}
+main.dashboard .container section.account article form .levelBox .pill input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+main.dashboard .container section.account article form .levelBox .pill label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 42px;
+  text-align: center;
+  color: #2E3331;
+  width: 100%;
+  display: block;
+}
+main.dashboard .container section.account article form .levelBox .pill.active {
+  background: #6B8CFA;
+}
+main.dashboard .container section.account article form .levelBox .pill.active label {
+  color: #fff;
+}
+main.dashboard .container section.account article form button {
+  width: 320px;
+  margin-top: 12px;
+  transition: 0.2s ease;
+}
+main.dashboard .container section.account article form button.unactive {
+  transition: 0.2s ease;
+  pointer-events: none;
+  filter: grayscale(1);
+  opacity: 0.25;
+}
+
+@media (max-width: 1000px) {
+  main.dashboard .container {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  main.dashboard .container nav {
+    width: 100%;
+    margin-top: 20px;
+  }
+  main.dashboard .container nav ul li:first-of-type {
+    display: none;
+  }
+  main.dashboard .container section.account {
+    width: 100%;
+  }
+  main.dashboard .container section.account article {
+    width: 100%;
+  }
+  main.dashboard .container nav {
+    padding: 36px 42px;
+  }
+  main.dashboard .container nav ul li a {
+    background: #6B8CFA;
+    max-width: 320px;
+    height: 46px;
+  }
+  main.dashboard .container nav ul li a.logoutLink {
+    background-color: #aaa;
+  }
+  main.dashboard .container nav ul li a .imgBox img.default {
+    display: none;
+  }
+  main.dashboard .container nav ul li a .imgBox img.white {
+    display: block;
+    filter: contrast(1) brightness(1000);
+  }
+  main.dashboard .container nav ul li a span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  main.dashboard .container nav ul li a:hover {
+    background: #6B8CFA;
+  }
+  footer {
+    height: 75px;
+  }
+}
+@media (max-width: 750px) {
+  header,
+  header .container {
+    height: 80px;
+  }
+  header .container a.logo img {
+    height: 31px;
+  }
+  main.dashboard {
+    padding: 80px 0px 0px;
+  }
+  header .container .support {
+    display: none;
+  }
+  main.dashboard .container section.account article .accountInfo {
+    position: relative;
+    padding-top: 6px;
+  }
+  main.dashboard .container section.account article .accountInfo .name {
+    font-size: 18px;
+  }
+  main.dashboard .container section.account article .accountInfo .status {
+    position: absolute;
+    top: -42px;
+    right: 0px;
+  }
+  section.signin {
+    padding: 38px 26px 38px;
+  }
+  main.signin {
+    min-height: calc(100vh - 80px);
+  }
+}
+@media (max-width: 600px) {
+  main.dashboard .container section.account article,
+  main.dashboard .container nav {
+    padding: 26px;
+  }
+  main.dashboard .container nav ul li a {
+    max-width: 100%;
+    width: 100%;
+  }
+  main.dashboard .container section.account article form button {
+    width: 100%;
+  }
+  main.dashboard .container section.account article form .levelBox {
+    width: 100%;
+  }
+  main.dashboard .container section.account article form .levelBox .pill {
+    width: 33.3333333333%;
+  }
+}
